@@ -19,7 +19,7 @@ public class MissaoModel {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String nome;
-    private int dificuldade;
+    private String dificuldade;
 
     @OneToMany(mappedBy = "missoes")
     private List<NinjaModel> ninja;
