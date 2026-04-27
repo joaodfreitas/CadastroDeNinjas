@@ -27,5 +27,5 @@ public class MissaoModel {
     private List<NinjaModel> ninja;
 
 
-
+}
 
