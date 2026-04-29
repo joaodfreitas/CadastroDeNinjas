@@ -22,5 +22,11 @@ public class MissaoService {
                 return missaoPorId.orElse(null);
     }
 
+    // Criar uma nova missao
+    public MissaoModel criarMissao(MissaoModel missao){
+        return missaoRepository.save(missao);
+    }
+
+
 
 }

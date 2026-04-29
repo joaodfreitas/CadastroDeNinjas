@@ -26,12 +26,11 @@ public class MissaoController {
         return missaoService.listarMissoesPorId(id);
     }
 
-
-
     // Post -- Mandar uma requisição para criar as missoes
+
     @PostMapping("/criar")
-    public String criarMissao() {
-        return "Missao criada com sucesso";
+    public MissaoModel criarMissao(@RequestBody MissaoModel missao) {
+        return missaoService.criarMissao(missao);
     }
     // Put -- Mandar uma requisição para alterar as missoes
 
